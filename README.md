@@ -2,7 +2,23 @@
 
 A Streamlit-powered conversational app that lets you **talk to your PDFs**!  
 
-Built with 🧠 FAISS vector search, 💬 Groq LLMs, and 🤗 HuggingFace embeddings.
+**"Chota Baccha samajhke... PDF ko aankh dikhayega?"**
+
+Yes. Yes, it will.
+
+**ChotaBacchaPDF** is a friendly Streamlit bot that takes your boring academic PDFs (or any PDFs, really), chews through them like a FAISS-t beast, and answers your questions using Groq's blazing-fast LLMs.
+
+Whether you're:
+
+- a confused student trying to figure out what are Bi-RNNs in the last minute
+
+- a researcher digging for specific info in dense papers
+
+- or just someone who wants to vibe with a PDF...
+
+This app has your back. No scroll-storming, no ctrl+F nightmares.
+
+**Pehle istemaal karo, Phir vishwas karo.**
 
 ---
 
