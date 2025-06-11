@@ -1,5 +1,3 @@
-
-
 import streamlit as st
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
@@ -15,20 +13,12 @@ def user_input_handler(question):
     st.markdown("### 💡 Answer")
     st.markdown(response["output_text"]) 
 
-    # 🆕 Show retrieved chunks
+    
     with st.expander("📄 View matched context from your PDF"):
         for i, doc in enumerate(docs):
             st.markdown(f"**Chunk {i+1}:**")
-            st.markdown(f"```text\n{doc.page_content.strip()[:1500]}\n```")  
+            st.markdown(f"```text\n{doc.page_content.strip()[:1500]}\n```")  # show first 1500 characters
 
-
-
-
-
-    with st.expander("🗂️ Source documents used"):
-        for i, doc in enumerate(docs):
-            st.markdown(f"**Doc {i+1}**")
-            st.write(doc.page_content[:500] + "...")
 
 def main():
     st.set_page_config(page_title="📚 PDF, BotKiBaat", layout="wide")
