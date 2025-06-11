@@ -1,6 +1,7 @@
 # 🤖 ChotaBacchaPDF: EkBotKatha
 
 A Streamlit-powered conversational app that lets you **talk to your PDFs**!  
+
 Built with 🧠 FAISS vector search, 💬 Groq LLMs, and 🤗 HuggingFace embeddings.
 
 ---
@@ -30,7 +31,7 @@ Built with 🧠 FAISS vector search, 💬 Groq LLMs, and 🤗 HuggingFace embedd
 
 ---
 
-## 🧪 Demo
+## 🧪 Landing Page Demo
 
 ![Demo Screenshot](ChotaBacchaSS.png)
 
