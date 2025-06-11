@@ -32,26 +32,26 @@ Built with 🧠 FAISS vector search, 💬 Groq LLMs, and 🤗 HuggingFace embedd
 
 ## 🧪 Demo
 
-![Demo Screenshot](demo_screenshot.png) <!-- Replace or remove if not using -->
+![Demo Screenshot](demo_screenshot.png)
 
 ---
 
 ## 🔗 Try the App Live
 
-👉 [**Launch on Streamlit Cloud**](https://your-username-your-repo.streamlit.app)  
-_(replace with your actual Streamlit app URL)_
+👉 [**Launch on Streamlit Cloud**](https://chotabaccha--pdf-q-a-bot-leprxnx24ukbtw58zip8ft.streamlit.app/)
+
 
 ---
 
 ## 🙏 Special Thanks
 
-- 💬 [Groq](https://console.groq.com) – for free blazing-fast LLMs
-- 🤗 [Hugging Face](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) – for powerful free embeddings
+- 💬 [Groq](https://console.groq.com) – for blazing-fast LLMs
+- 🤗 [Hugging Face](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) – for powerful embeddings
 - 🧠 [LangChain](https://www.langchain.com) – for making LLM orchestration so easy
 - 💡 [Streamlit](https://streamlit.io) – for making beautiful apps in minutes
-- 🤝 To all devs who still believe in building cool stuff with free-tier power 💪
+- 🤝 To all devs who still believe in building cool stuff with free-tier power 😂💪
 
 ---
 
-> Made with ❤️ by [Your Name]  
-> MIT Licensed – Fork, remix, or ship!
+> Made with ❤️ by Ankush Mitra
+
