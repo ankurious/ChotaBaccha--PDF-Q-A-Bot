@@ -32,7 +32,7 @@ Built with 🧠 FAISS vector search, 💬 Groq LLMs, and 🤗 HuggingFace embedd
 
 ## 🧪 Demo
 
-![Demo Screenshot](demo_screenshot.png)
+![Demo Screenshot](ChotaBacchaSS.png)
 
 ---
 
