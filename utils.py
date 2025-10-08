@@ -40,6 +40,7 @@ def get_conversational_chain():
     Answer:
     """
     prompt = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
-    llm = ChatGroq(model_name="llama-3.1-70b-versatile", groq_api_key=groq_api_key)
+    llm = ChatGroq(model_name="llama-3.3-70b-versatile", groq_api_key=groq_api_key)
     return load_qa_chain(llm, chain_type="stuff", prompt=prompt)
+
 
