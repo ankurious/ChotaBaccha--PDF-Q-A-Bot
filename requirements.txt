@@ -8,4 +8,7 @@ langchain-text-splitters>=0.3.0
 sentence-transformers>=2.7.0
 transformers>=4.44.0
 python-dotenv>=1.0.1
+langchain-chains
+
+
 
