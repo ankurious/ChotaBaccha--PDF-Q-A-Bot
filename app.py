@@ -3,6 +3,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from utils import get_pdf_text, get_text_chunks, get_vector_store, get_conversational_chain
 
+
 def user_input_handler(question):
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     db = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
@@ -11,13 +12,12 @@ def user_input_handler(question):
     response = chain({"input_documents": docs, "question": question}, return_only_outputs=True)
 
     st.markdown("### 💡 Answer")
-    st.markdown(response["output_text"]) 
+    st.markdown(response["output_text"])
 
-    
     with st.expander("📄 View matched context from your PDF"):
         for i, doc in enumerate(docs):
-            st.markdown(f"**Chunk {i+1}:**")
-            st.markdown(f"```text\n{doc.page_content.strip()[:1500]}\n```")  # show first 1500 characters
+            st.markdown(f"**Chunk {i + 1}:**")
+            st.markdown(f"```text\n{doc.page_content.strip()[:1500]}\n```")
 
 
 def main():
@@ -45,6 +45,7 @@ def main():
     question = st.text_input("🗨️ Aapki Zarurat")
     if question:
         user_input_handler(question)
+
 
 if __name__ == "__main__":
     main()
