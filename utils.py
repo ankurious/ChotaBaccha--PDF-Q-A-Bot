@@ -2,7 +2,7 @@ from PyPDF2 import PdfReader
 from langchain_text_splitters import RecursiveCharacterTextSplitter  
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_chains import load_qa_chain
+from langchain.chains.question_answering.chain import load_qa_chain
 from langchain.prompts import PromptTemplate
 from langchain_groq import ChatGroq
 import os
@@ -42,4 +42,5 @@ def get_conversational_chain():
     prompt = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
     llm = ChatGroq(model_name="llama-3.3-70b-versatile", groq_api_key=groq_api_key)
     return load_qa_chain(llm, chain_type="stuff", prompt=prompt)
+
 
