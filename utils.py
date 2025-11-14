@@ -44,5 +44,6 @@ def get_conversational_chain():
     prompt = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
     llm = ChatGroq(model_name="llama-3.3-70b-versatile", groq_api_key=groq_api_key)
     
-    # ✅ Using the new method instead of deprecated load_qa_chain
+
     return create_stuff_documents_chain(llm, prompt, document_variable_name="context")
+
